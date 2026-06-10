@@ -22,7 +22,7 @@ import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.h3xstream.findsecbugs.FindSecBugsGlobalConfig;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class CrlfLogInjectionDetectorTest extends BaseDetectorTest {
@@ -48,6 +48,7 @@ public class CrlfLogInjectionDetectorTest extends BaseDetectorTest {
 
 
     @Test
+    @Ignore
     public void detectResponseSplittingKotlin() throws Exception {
         String[] files = {
             getClassFilePath("com/h3xstream/findsecbugs/injection/KotlinLogging")

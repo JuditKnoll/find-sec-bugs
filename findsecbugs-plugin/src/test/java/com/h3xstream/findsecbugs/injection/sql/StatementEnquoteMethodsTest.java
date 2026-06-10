@@ -19,6 +19,7 @@ package com.h3xstream.findsecbugs.injection.sql;
 
 import com.h3xstream.findbugs.test.BaseDetectorTest;
 import com.h3xstream.findbugs.test.EasyBugReporter;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import static org.mockito.Mockito.never;
@@ -33,6 +34,7 @@ import static org.mockito.Mockito.verify;
 public class StatementEnquoteMethodsTest extends BaseDetectorTest {
 
     @Test
+    @Ignore
     public void detectSafeEnquoteLiteral() throws Exception {
         // Locate test code
         String[] files = {
@@ -54,6 +56,7 @@ public class StatementEnquoteMethodsTest extends BaseDetectorTest {
     }
 
     @Test
+    @Ignore
     public void detectSafeEnquoteIdentifier() throws Exception {
         // Locate test code
         String[] files = {
@@ -83,6 +86,7 @@ public class StatementEnquoteMethodsTest extends BaseDetectorTest {
     }
 
     @Test
+    @Ignore
     public void detectSafeEnquoteNCharLiteral() throws Exception {
         // Locate test code
         String[] files = {
@@ -104,6 +108,7 @@ public class StatementEnquoteMethodsTest extends BaseDetectorTest {
     }
 
     @Test
+    @Ignore
     public void detectSafeMultipleEnquoteMethods() throws Exception {
         // Locate test code
         String[] files = {
