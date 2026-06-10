@@ -30,6 +30,7 @@ public class BaseConfigValidation {
 
     private List<String> classesDeprecatedInJava8 = Arrays.asList("java.time.ZonedId");
     private List<String> classesDeprecatedInJava9 = Arrays.asList("javax.activation.FileDataSource",
+            "jakarta.activation.FileDataSource",
             "javax.xml.bind.DatatypeConverter");
 
     /**
